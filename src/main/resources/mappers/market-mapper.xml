@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Market">
+    <insert id="insertMarket">
+        insert into MARKET(sellername, product, price, category, location, dealtime, detail) values (#{sellername}, #{product}, #{price}, #{category}, #{location}, #{dealtime},#{detail})
+    </insert>
+    <update id="updateMarket">
+        update MARKET set sellername=#{sellername}, product=#{product}, price=#{price},category=#{category} , location=#{location} , dealtime=#{dealtime} , detail=#{detail}  where seq=#{seq}
+    </update>
+    <delete id="deleteMarket">
+        delete from MARKET where seq=#{seq}
+    </delete>
+    <select id="getMarket" resultType="market">
+        select * from MARKET where seq=#{seq}
+    </select>
+    <select id="getMarketList" resultType="market">
+        select * from MARKET order by seq desc
+    </select>
+</mapper>
