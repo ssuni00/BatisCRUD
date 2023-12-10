@@ -14,38 +14,29 @@
 
 <html>
 <head>
-    <title>View</title>
+    <title>view prodect</title>
 </head>
 <body>
-<h1>View Your Post</h1>
-
-<%--<form:form modelAttribute="boardVO" method="post" action="../editok">--%>
-<%--    <form:hidden path="seq"/>--%>
-<%--    <table id="edit">--%>
-<%--        <tr><td>Title:</td><td><form:input path="title" /></td></tr>--%>
-<%--        <tr><td>Writer:</td><td><form:input path="writer" /></td></tr>--%>
-<%--        <tr><td>Content:</td><td><form:textarea cols="50" rows="5" path="content"/></td></tr>--%>
-<%--    </table>--%>
-<%--</form:form>--%>
+<h1>상품 자세히 보기</h1>
 
 <div>
 
     <table>
 
         <tr>
-            <td>Seller Name:</td>
+            <td>판매자 이름:</td>
             <td><label name="sellername">${u.sellername}</label></td>
         </tr>
         <tr>
-            <td>Product Name:</td>
+            <td>상품 이름:</td>
             <td><label name="product">${u.product}</label></td>
         </tr>
         <tr>
-            <td>Price:</td>
+            <td>상품 가격:</td>
             <td><label name="price">${u.price}</label></td>
         </tr>
         <tr>
-            <td>Category:</td>
+            <td>카테고리:</td>
             <td><label name="category">${u.category}</label></td>
         </tr>
         <tr>
@@ -53,15 +44,15 @@
             <td><label name="detail">${u.detail}</label></td>
         </tr>
         <tr>
-            <td>Location:</td>
+            <td>거래 희망 위치:</td>
             <td><label name="location">${u.location}</label></td>
         </tr>
         <tr>
-            <td>Time:</td>
+            <td>거래 희망 일:</td>
             <td><label name="dealtime">${u.dealtime}</label></td>
         </tr>
         <tr>
-            <td><input type="button" value="Back to List" onclick="history.back()"/></td>
+            <td><input type="button" value="상품 리스트로 돌아가기" onclick="history.back()"/></td>
         </tr>
     </table>
 </div>

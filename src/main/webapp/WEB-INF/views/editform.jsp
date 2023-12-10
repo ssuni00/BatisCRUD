@@ -11,26 +11,25 @@
 </head>
 <body>
 
-<h1>Edit Post</h1>
+<h1>상품 수정</h1>
 <form:form modelAttribute="u" method="POST" action="../editok">
     <form:hidden path="seq"/>
     <table id="edit">
         <tr>
-            <td>Seller Name:</td>
+            <td>판매자 이름:</td>
             <td><form:input type="text" path="sellername"/></td>
         </tr>
         <tr>
-            <td>Product Name:</td>
+            <td>상품 이름:</td>
             <td><form:input type="text" path="product"/></td>
         </tr>
         <tr>
-            <td>Price:</td>
+            <td>상품 가격:</td>
             <td><form:input type="text" path="price"/></td>
         </tr>
         <tr>
-            <td>Category:</td>
+            <td>카테고리:</td>
             <td>
-
                 <form:select  class="form-select" name="category" id="state" path="category">
                     <form:option value="" label="상품 종류를 선택하세요" />
                     <form:option value="식품" label="식품" />
@@ -43,20 +42,20 @@
                 </td>
         </tr>
         <tr>
-            <td>Detail:</td>
+            <td>상세설명:</td>
             <td><form:textarea name="detail" cols="50" rows="5" path="detail"/></td>
         </tr>
         <tr>
-            <td>Location:</td>
+            <td>거래 희망 위치:</td>
             <td><form:input type="text" path="location"/></td>
         </tr>
         <tr>
-            <td>Time:</td>
+            <td>거래 희망 일자:</td>
             <td><form:input type="date" path="dealtime"/></td>
         </tr>
         <tr>
-            <td><input type="button" value="Cancel" onclick="history.back()"/></td>
-            <td align="right"><input type="submit" value="Edit Post"/></td>
+            <td><input type="button" value="취소하기" onclick="history.back()"/></td>
+            <td align="right"><input type="submit" value="수정 완료"/></td>
         </tr>
     </table>
 </form:form>

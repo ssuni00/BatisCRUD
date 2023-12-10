@@ -6,27 +6,27 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>add new product</title>
 </head>
 <body>
 
-<h1>Add New Post</h1>
+<h1>상품을 추가해보세요!</h1>
 <form action="addok" method="post">
     <table>
         <tr>
-            <td>Seller Name:</td>
+            <td>판매자 이름:</td>
             <td><input type="text" name="sellername"/></td>
         </tr>
         <tr>
-            <td>Product Name:</td>
+            <td>상품 이름:</td>
             <td><input type="text" name="product"/></td>
         </tr>
         <tr>
-            <td>Price:</td>
+            <td>상품 가격:</td>
             <td><input type="text" name="price"/></td>
         </tr>
         <tr>
-            <td>상품 종류:</td>
+            <td>카테고리</td>
             <td><label for="state" class="form-label"></label>
                 <select class="form-select" id="state" name="category">
                     <option value="">상품 종류를 선택하세요</option>
@@ -39,20 +39,20 @@
                 </select></td>
         </tr>
         <tr>
-            <td>Detail:</td>
+            <td>상세설명:</td>
             <td><textarea  cols="50" rows="5" name="detail"></textarea></td>
         </tr>
         <tr>
-            <td>Location:</td>
+            <td>거래 희망 위치:</td>
             <td><input type="text" name="location"/></td>
         </tr>
         <tr>
-            <td>Time:</td>
+            <td>거래 희망 일자:</td>
             <td><input type="date" name="dealtime" value="2023-12-16"/></td>
         </tr>
         <tr>
-            <td><a href="list">View All Records</a></td>
-            <td align="right"><input type="submit" value="Add Post"/></td>
+            <td><a href="list">상품 리스트로 돌아가기</a></td>
+            <td align="right"><input type="submit" value="상품 등록"/></td>
         </tr>
     </table>
 </form>

@@ -38,7 +38,9 @@
     </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<h1>한동마켓 게시판</h1>
+
+<br/><button type="button"><a href="../login/logout">로그아웃</a></button>
 
 <table id="list" width="90%">
     <tr>
@@ -48,11 +50,11 @@
         <th>카테고리</th>
         <th>상세설명</th>
         <th>판매자 이름</th>
-        <th>거래희망지역</th>
-        <th>거래희망시간</th>
+        <th>거래 희망 위치</th>
+        <th>거래 희망 일자</th>
         <th>등록 일자</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>수정</th>
+        <th>삭제</th>
     </tr>
     <c:forEach items="${list}" var="u">
         <tr>
@@ -65,12 +67,11 @@
             <td>${u.location}</td>
             <td>${u.dealtime}</td>
             <td>${u.regdate}</td>
-            <td><a href="editform/${u.seq}">Edit</a></td>
-            <td><a href="deleteok/${u.seq}" onclick="delete_ok()">Delete</a></td>
+            <td><a href="editform/${u.seq}">클릭!</a></td>
+            <td><a href="deleteok/${u.seq}" onclick="delete_ok()">클릭!</a></td>
         </tr>
     </c:forEach>
 </table>
-<%--<br/><a href="addform.jsp">Add New Post</a>--%>
-<br/><button type="button" onclick="location.href='add'">New Post</button>
+<br/><button type="button" onclick="location.href='add'">상품 등록</button>
 </body>
 </html>
