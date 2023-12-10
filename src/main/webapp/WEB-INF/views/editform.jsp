@@ -24,7 +24,7 @@
             <td><form:input type="text" path="product"/></td>
         </tr>
         <tr>
-            <td>상품 가격:</td>
+            <td>상품 가격 (숫자만 입력):</td>
             <td><form:input type="text" path="price"/></td>
         </tr>
         <tr>

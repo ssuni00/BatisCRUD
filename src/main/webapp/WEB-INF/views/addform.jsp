@@ -22,7 +22,7 @@
             <td><input type="text" name="product"/></td>
         </tr>
         <tr>
-            <td>상품 가격:</td>
+            <td>상품 가격 (숫자만 입력):</td>
             <td><input type="text" name="price"/></td>
         </tr>
         <tr>
@@ -52,7 +52,7 @@
         </tr>
         <tr>
             <td><a href="list">상품 리스트로 돌아가기</a></td>
-            <td align="right"><input type="submit" value="상품 등록"/></td>
+            <td align="right"><button type="submit"/>상품 등록</td>
         </tr>
     </table>
 </form>

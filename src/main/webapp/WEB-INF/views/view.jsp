@@ -33,7 +33,7 @@
         </tr>
         <tr>
             <td>상품 가격:</td>
-            <td><label name="price">${u.price}</label></td>
+            <td><label name="price">${u.price}원</label></td>
         </tr>
         <tr>
             <td>카테고리:</td>
@@ -48,7 +48,7 @@
             <td><label name="location">${u.location}</label></td>
         </tr>
         <tr>
-            <td>거래 희망 일:</td>
+            <td>거래 희망 일자:</td>
             <td><label name="dealtime">${u.dealtime}</label></td>
         </tr>
         <tr>

@@ -60,7 +60,7 @@
         <tr>
             <td>${u.seq}</td>
             <td><a href="view/${u.seq}">${u.product}</a></td>
-            <td>${u.price}</td>
+            <td>${u.price}원</td>
             <td>${u.category}</td>
             <td>${u.detail}</td>
             <td>${u.sellername}</td>
