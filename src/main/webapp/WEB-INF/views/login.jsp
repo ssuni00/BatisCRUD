@@ -33,7 +33,7 @@
   <img src='../img/login.png' height="250">
   <form method="post" action="loginOk">
     <div>
-      <label>User ID: </label>
+      <label>ID: </label>
       <input type='text' name='userid'/>
     </div>
     <div>
