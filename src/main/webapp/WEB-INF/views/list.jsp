@@ -29,6 +29,9 @@
             background-color: #006bb3;
             color: white;
         }
+        .logoutBtn{
+            margin-bottom: 20px;
+        }
     </style>
     <script>
         function delete_ok(){
@@ -40,7 +43,7 @@
 <body>
 <h1>한동마켓 게시판</h1>
 
-<br/><button type="button"><a href="../login/logout">로그아웃</a></button>
+<br/><button class="logoutBtn"><a href="../login/logout">로그아웃</a></button>
 
 <table id="list" width="90%">
     <tr>
